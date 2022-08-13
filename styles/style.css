@@ -13,6 +13,12 @@ body{
     font-weight: 400;
 }
 
+
+
+
+
+
+
 /*HEADER*****/
 .header{
     display: flex;
@@ -31,9 +37,17 @@ body{
     
     
 }
+.hamburger-menu{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+#menu__toggle{
+    visibility: hidden;
+}
 
 .header-navigation {
-    display: flex;
+    display: flex !important;
     column-gap: 30px;
     line-height: 22px;
     padding: 0;
@@ -58,10 +72,13 @@ body{
 .logo{
     margin:0px 60px 0px 60px;
 }
+.search{
+    visibility: hidden;
+}
 
 /*MAIN SECTION*******/
 
-.register-section{
+.first-block{
     display: flex;
     flex-direction: row;
     justify-content: right;
@@ -83,6 +100,7 @@ body{
     font-size: 48px;
     font-weight: 700;
     line-height: 60px;
+    
 
 }
 .info-block{
@@ -90,17 +108,29 @@ body{
     flex-direction: column;
     justify-content: space-between;
     text-align: left;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     margin-bottom: 30px;
+    position: relative;
 
 }
 .info{
     display: block;
     color: #585757;
+    margin-top: 20px;
    font-size: 20px;
    line-height: 30px;
+}
+
+.info-desktop{
+    visibility: visible;
+
   
 }
+
+.info-mobile{
+    display: none;
+}
+
 
 .form{
     display: flex;
@@ -152,24 +182,24 @@ body{
 }
 
 .safari{
-   display: block;
-   box-sizing: border-box;
+
 }
 /*****About pc block****/
 section.second-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-sizing: content-box;
     border: #969696 solid 1px;
 }
 
 .about-computers{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    justify-content: center !important;
     flex-wrap: wrap;
-    margin: 0 auto;
+    margin-bottom: 104px;
     max-width: 731px;
-    height: 460px;
+    
     
 }
 
@@ -177,6 +207,8 @@ section.second-block{
 .circle{
     width: 96px;
     height: 96px;
+    margin-top: 110px;
+    position: relative;
     background-color: #DBDBDB;
     border-radius: 50%;
     
@@ -193,17 +225,21 @@ section.second-block{
 
 /*Section 3*/
 
-.about-spyware{
+.third-block{
+    height: 620px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 110px 
+    box-sizing: content-box;
 }
 
 .different-text{
+    display: flex;
+    flex-direction: column;
     max-width: 445px;
-    margin-right: 30px;
+    margin: 10px 30px 0px;
+    
    
 }
 
@@ -218,7 +254,7 @@ section.second-block{
 } 
 .block-with-text{
     height: 86px;
-    margin-bottom: 40px;
+    margin-top: 30px;
 }
 
 .second-heading{
@@ -228,7 +264,6 @@ section.second-block{
 }
 .short-info{
     font-size: 15px;
-    max-height: 44px;
     line-height: 22px;
     letter-spacing: -0.2px;
     margin: 0px;
@@ -253,27 +288,285 @@ section.second-block{
 
 /**** Section Analytics*****/
 
-.canvasjs-chart-canvas{
-    position: relative;
-    align-content: left;
-}
-.about-analystic{
+
+.fourth-block{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    height: 480px;
+    padding: 110px 145px;
+    box-sizing: border-box;
     border: #969696 1px solid;
 }
-.text-quality{
-    text-align: center;
-    max-width: 350px;
+.doughnut{
+    margin-right: 76px;
+}
 
+.percent{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: -0.8px;
+
+}
+.green::before{
+    content: " ";
+    display: inline-block;
+    background-color: #24AFB5;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 20px;
+    
+}
+.light-green::before{
+    content: " ";
+    display: inline-block;
+    background-color:rgba(36, 175, 181, 0.2);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 20px;
     
 }
 
-.quality-descr{
+.gray::before{
+    content: " ";
+    display: inline-block;
+    background-color:#DBDBDB;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 20px;
+    
+}
+
+.light-gray::before{
+    content: " ";
+    display: inline-block;
+    background-color:#F7F7F7;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 20px;
+    
+}
+
+td{
+    width: 160px;
+    height: 77px;
+   
+}
+tr{
+    padding: 0px 15px;
+}
+.td-1{
+    padding:0px 30px 40px 0px;
+}
+.name{
+    margin:0px 0px 0px 44px;
+    font-size: 15px;
+}
+.text-quality{
     max-width: 350px;
-    margin: 0 auto;
     text-align: left;
 }
+
+.quality-descr{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+}
+
+
+
+@media screen and (max-width: 320px) {
+    .first-heading{
+        font-size: 36px;
+    }
+
+    .header-navigation{
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+    }
+    .hamburger-menu{
+        visibility: visible !important;
+    }
+    #menu__toggle {
+        opacity: 0;
+      }
+      /* стилизуем кнопку */
+      .menu__btn {
+        display: flex; /* используем flex для центрирования содержимого */
+        align-items: center;  /* центрируем содержимое кнопки */
+        position: absolute;
+        top: 38px;
+        left: 18px;
+        width: 18px;
+        height: 12px;
+        cursor: pointer;
+        z-index: 1;
+      }
+      /* добавляем "гамбургер" */
+      .menu__btn > span,
+      .menu__btn > span::before,
+      .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #616161;
+      }
+      .menu__btn > span::before {
+        content: '';
+        top: -6px;
+      }
+      .menu__btn > span::after {
+        content: '';
+        top: 6px;
+      }
+
+      #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+      #menu__toggle:checked ~ .header-navigation{
+        visibility: visible;
+        padding: 50px 10px;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 50px;
+        left: 0;
+      }
+      #menu__toggle:checked ~ .second-nav{
+      margin-top: 20px;
+      }
+
+      .search{
+        visibility: visible ;
+        position: absolute;
+        top: 38px;
+        right: 19px;
+        width: 17px;
+        height: 17px;
+      }
+      
+    /*******/
+        .first-block{
+        flex-direction: column-reverse ;
+        padding-top: 40px ;
+      }
+      .info{
+        font-size: 15px;
+      }
+      .info-block{
+        align-items: center;
+   
+        
+      }
+      .info-mobile{
+        display: block ;
+    
+      }
+      .heading-info{
+        align-items: center ;
+        width: 100%;
+        padding:30px 15px 45px 15px;
+      
+      }
+      .info-desktop{
+        display: none ;
+        visibility: hidden;
+      }
+      .form{
+        max-width: 290px;
+
+      }
+      .input{
+       max-width: 290px;
+       box-sizing: border-box;
+      }
+/****/
+      .safari{
+        display: flex;
+        width: 300px;
+        height: auto;
+        margin-left: 20px;
+        align-items: right;
+    
+      }
+      /*********/
+      .about-computers{
+        max-height: 650px;
+        padding: 0px 15px;
+      }
+      .info-plus {
+        margin: 30px 0px 44px;
+        max-width: 290px; 
+    }
+
+    .circle {
+        width: 96px;
+        height: 96px;
+        margin-top: 40px;
+ 
+    }
+    /***About spyware****/
+    .block-with-text{
+        margin-bottom: 30px;
+    }
+    .third-block{
+        max-height: 680px;
+        padding: 40px 15px 46px;
+        flex-direction: column ;
+        box-sizing: content-box;
+    }
+    .different-text{
+        margin: 0px 0px 30px;
+    
+        
+
+    }
+    .img-screen{
+        position: relative;
+        max-width: 290px;
+        height: 180px;
+    }
+/*********/
+.fourth-block{
+    max-height: 790px;
+    overflow: hidden;
+    flex-direction: column;
+    padding:40px 15px 40px;
+
+}
+.doughnut{
+    margin: 0px;
+}
+
+table{
+    margin-top: 30px;
+    /* padding-left: 15px; */
+}
+
+.name{
+    margin: 0px;
+    padding-left: 44px;
+}
+.text-quality{
+    margin-top: 30px;
+}
+
+  }

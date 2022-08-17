@@ -1,17 +1,25 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video {  
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+ blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, 
+ ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, 
+ dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, 
+ th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup, 
+  menu, nav, output, ruby, section,button, summary, time, mark, audio, video {  
     margin: 0;  
     padding: 0;  
     border: 0;  
     font-size: 100%;  
     font: inherit;  
     vertical-align: baseline; 
+
 }
 
 body{
     font-family: 'Inter', sans-serif;
     color: black;
     font-weight: 400;
+    font-size: 15px;
 }
+
 
 
 
@@ -100,6 +108,7 @@ body{
     font-size: 48px;
     font-weight: 700;
     line-height: 60px;
+    letter-spacing: -1.2px;
     
 
 }
@@ -119,6 +128,9 @@ body{
     margin-top: 20px;
    font-size: 20px;
    line-height: 30px;
+   max-width: 730px;
+   letter-spacing: -0.3px;
+  
 }
 
 .info-desktop{
@@ -142,21 +154,13 @@ body{
 }
 
 .button{
-   
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     padding: 11px 16px;
     font-weight: 600;
     font-size: 20px;
     line-height: 26px;
-    text-align: center;
-    color: #FFFFFF;
-    background: #24AFB5;
-    border: 1px solid #DBDBDB;
-    border-radius: 6px;
     margin-top: 10px;
 }
+
 
 .input{
     color: #585757;
@@ -307,6 +311,8 @@ section.second-block{
     font-size: 36px;
     line-height: 46px;
     letter-spacing: -0.8px;
+    width: 160px;
+
 
 }
 .green::before{
@@ -377,7 +383,212 @@ tr{
     font-size: 15px;
     line-height: 22px;
     letter-spacing: -0.2px;
+    display: inline-block;
 }
+/****5 BLOCK***/
+.fifth-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 110px;
+
+}
+.short-heading{
+    max-width: 730px;
+    text-align: center;
+}
+.mobile-heading{
+    display: none;
+}
+.feautures{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    
+}
+.third-heading::before{
+    content: url(../img/big-graphik.png);
+    display: block;
+    /* width: 64px;
+    height: 64px; */
+    margin: 60px auto 10px;
+    
+}
+.third-heading{
+    width: 160px;
+    text-align: center;
+    font-weight: 600;
+}
+.safari-window{
+    margin-top: 60px;
+}
+/******6 block*******/
+.sixth-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 124px 0px 115px;
+    border-top: #969696 1px solid;
+    border-bottom: #969696 1px solid;
+    
+ 
+}
+.content-nav{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    border: #616161 1px solid;
+    width:48px;
+    height:48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btn-icon{
+    /* width:6.04px;
+    height:10.24px; */
+    width: 20px;
+    height: 20px;
+    stroke:#969696;
+    color: #969696;
+    
+}
+
+.btn-left{
+    left: 237px;
+    transform: translate(0,-50%);
+}
+.btn-right{
+    right: 237px;
+    transform: translate(0,-50%);
+}
+.google{
+    margin-top: 40px;
+}
+.bold{
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+}
+.designer{
+    margin-top: 5px;
+}
+.learn-more{
+   margin-top: 40px;
+   color:#24AFB5;
+   text-decoration: none;
+   font-weight: 600;
+   line-height: 22px;
+    text-align: center;
+}
+.dots{
+    display: none;
+}
+
+/**************7******/
+.seventh-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    padding: 110px 0px;
+}
+.details-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    width: 350px;
+    height: 450px;
+    border: 1px solid #DBDBDB;
+    border-radius: 8px;
+    padding: 30px 30px 44px;
+    position: relative;
+}
+.free{
+    display: inline-block;
+    margin: 20px 0px;
+}
+.features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    margin-bottom: 30px;
+}
+.btn-to-buy{
+    width:113px;
+    height: 48px;
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    column-gap: 16.83px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05), 
+    0px 2px 1px rgba(0, 0, 0, 0.03), 
+    0px 1px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.green-button{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background-color: #24AFB5;
+    border: 1px solid #DBDBDB;
+    border-radius: 6px;
+}
+input.check{
+    background-color: #24AFB5 !important;
+    border: 1px solid #DBDBDB !important;
+}
+input.check::after{
+    display: block;
+    accent-color: #24AFB5 ;
+    background-color: #24AFB5 !important;
+    color: #FFFFFF;
+    border: 1px solid #DBDBDB !important;
+
+}
+input.check::before{
+    background-color: #24AFB5 !important;
+    border: 1px solid #DBDBDB !important;
+
+}
+.btn-bold{
+    margin-top: 0px;
+}
+.popular-btn{
+    position: absolute;
+    width: 61px;
+    right: 0;
+    top:0;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+}
+
+
 
 
 
@@ -469,7 +680,7 @@ tr{
         padding-top: 40px ;
       }
       .info{
-        font-size: 15px;
+        font-size: 20px;
       }
       .info-block{
         align-items: center;
@@ -535,16 +746,16 @@ tr{
     }
     .different-text{
         margin: 0px 0px 30px;
-    
-        
-
     }
     .img-screen{
         position: relative;
         max-width: 290px;
         height: 180px;
     }
-/*********/
+    .short-info {
+        font-size: 15px;
+    }
+/****4*****/
 .fourth-block{
     max-height: 790px;
     overflow: hidden;
@@ -557,16 +768,100 @@ tr{
 }
 
 table{
+    width: 290px;
+    box-sizing: content-box;
     margin-top: 30px;
-    /* padding-left: 15px; */
+    margin-left: 15px;
+}
+
+tr{
+    
+    padding: 0px 15px;
+}
+td{
+    width: 130px !important;
+}
+.td-1 {
+    padding: 0px 30px 30px 0px;
+    /* float: right; */
+    
 }
 
 .name{
+    font-size: 15px;
     margin: 0px;
     padding-left: 44px;
 }
 .text-quality{
     margin-top: 30px;
+}
+/********5 block*****/
+.fifth-block{
+    padding-top: 40px;
+}
+.short-heading{
+    padding: 0px 15px;
+}
+.feautures{
+    padding: 0px 15px;
+    flex-wrap: wrap;
+}
+.mobile-heading{
+    display: block;
+}
+.dekstop-heading{
+display: none;
+}
+.third-heading{
+    width: 130px;
+    margin-top: 30px;
+    /* margin: 30px auto 10px; */
+}
+.third-heading::before{
+    margin: 0px auto 10px;
+}
+.safari-window{
+    width: 300px;
+    margin-top: 68px;
+}
+/*********************/
+.sixth-block{
+    padding: 54.43px 15px 57px;
+}
+.info-astronomy{
+    margin: 24.19px 0px 0px;
+}
+.bold{
+    margin-top: 12.44px;
+}
+.btn{
+    display: none;
+}
+.learn-more{
+    margin-top: 30px;
+}
+.dots{
+    display: flex;
+    gap: 6px;
+    margin-top: 48.8px;
+}
+.dot{
+    width: 8px;
+    height: 8.06px;
+    border-radius: 50%;
+    background-color: #DBDBDB;
+}
+.dot-fill{
+    background-color: #24AFB5;;
+}
+/*********7****/
+.seventh-section{
+    padding: 40px 15px;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.details-content{
+    width: 290px;
 }
 
   }

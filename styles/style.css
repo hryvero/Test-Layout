@@ -19,7 +19,30 @@ body{
     font-weight: 400;
     font-size: 15px;
 }
+p{
+    display: inline-block;
+    color: #585757;
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 30px;
+   max-width: 730px;
+   letter-spacing: -0.3px;
+   text-align: left;
+}
+h1{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -1.2px;
+    color: #1C1C1C;
+    }
+.smaller-text{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.2px;
 
+}
 
 
 
@@ -53,20 +76,17 @@ body{
 #menu__toggle{
     visibility: hidden;
 }
-
-.header-navigation {
-    display: flex !important;
-    column-gap: 30px;
+.navigation{
+    display: flex;
+    column-gap: 30px !important;
     line-height: 22px;
     padding: 0;
-   
+}
+.navigation li{
+    display: inline;
+}
 
-}
-.header-navigation li{
-   display: inline;
-}
-.header-navigation a{
-    
+.navigation a{
     color: black;
     text-decoration: none;
     font-weight: 600;
@@ -123,12 +143,7 @@ section:nth-child(2){
 }
 
 .heading-info h1{
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 60px;
-    letter-spacing: -1.2px;
-    
-
+ margin-bottom: 20px;
 }
 .heading-info div{
     display: flex;
@@ -139,16 +154,7 @@ section:nth-child(2){
     position: relative;
 
 }
-.info{
-    display: block;
-    color: #585757;
-    margin-top: 20px;
-   font-size: 20px;
-   line-height: 30px;
-   max-width: 730px;
-   letter-spacing: -0.3px;
-  
-}
+
 
 .info-desktop{
     visibility: visible;
@@ -209,18 +215,6 @@ section:nth-child(2){
     padding: 110px 0px 104px;
 
 }
-
-/* .about-computers{
-    display: flex;
-    justify-content: center !important;
-    flex-wrap: wrap;
-    margin-bottom: 104px;
-    max-width: 731px;
-    
-    
-} */
-
-
 .circle{
     width: 96px;
     height: 96px;
@@ -239,13 +233,10 @@ section:nth-child(2){
     text-align: center;
 }
 
-/*Section 3*/
+/*Section about-spyware*/
 
-.third-block{
-    height: 620px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.about-spyware{
+    padding: 110px 0px;
     justify-content: center;
     box-sizing: content-box;
 }
@@ -259,7 +250,7 @@ section:nth-child(2){
    
 }
 
-.second-heading::before{
+.block-with-text h2::before{
    content: url(../img/graphik.png);
    box-sizing: border-box;
    margin-right: 15px ;
@@ -273,12 +264,12 @@ section:nth-child(2){
     margin-top: 30px;
 }
 
-.second-heading{
+.block-with-text h2{
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
 }
-.short-info{
+.block-with-text .short-info{
     font-size: 15px;
     line-height: 22px;
     letter-spacing: -0.2px;
@@ -305,12 +296,9 @@ section:nth-child(2){
 /**** Section Analytics*****/
 
 
-.fourth-block{
-    display: flex;
-    flex-direction: row;
+.analytics{
     justify-content: center;
-    align-items: center;
-    padding: 110px 145px;
+    padding: 110px 0px;
     box-sizing: border-box;
 }
 .doughnut{
@@ -323,8 +311,6 @@ section:nth-child(2){
     line-height: 46px;
     letter-spacing: -0.8px;
     width: 160px;
-
-
 }
 .green::before{
     content: " ";
@@ -333,8 +319,7 @@ section:nth-child(2){
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    margin-right: 20px;
-    
+    margin-right: 20px; 
 }
 .light-green::before{
     content: " ";
@@ -344,9 +329,7 @@ section:nth-child(2){
     height: 24px;
     border-radius: 50%;
     margin-right: 20px;
-    
 }
-
 .gray::before{
     content: " ";
     display: inline-block;
@@ -354,10 +337,8 @@ section:nth-child(2){
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    margin-right: 20px;
-    
+    margin-right: 20px;   
 }
-
 .light-gray::before{
     content: " ";
     display: inline-block;
@@ -366,13 +347,11 @@ section:nth-child(2){
     height: 24px;
     border-radius: 50%;
     margin-right: 20px;
-    
 }
 
 td{
     width: 160px;
     height: 77px;
-   
 }
 tr{
     padding: 0px 15px;
@@ -384,29 +363,28 @@ tr{
     margin:0px 0px 0px 44px;
     font-size: 15px;
 }
-.text-quality{
+.analytics div{
     max-width: 350px;
     text-align: left;
 }
 
-.quality-descr{
+.smaller-text{
     font-weight: 400;
     font-size: 15px;
     line-height: 22px;
     letter-spacing: -0.2px;
-    display: inline-block;
 }
-/****5 BLOCK***/
-.fifth-block{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 110px;
 
+/****About Features***/
+.about-features{
+    justify-content: center;
+    padding-top: 110px;
 }
-.short-heading{
-    max-width: 730px;
+.text-container h1{
+text-align: center;
+}
+.text-container p{
+    margin-top: 20px;
     text-align: center;
 }
 .mobile-heading{
@@ -418,15 +396,13 @@ tr{
     column-gap: 30px;
     
 }
-.third-heading::before{
+.feautures h3::before{
     content: url(../img/big-graphik.png);
     display: block;
-    /* width: 64px;
-    height: 64px; */
     margin: 60px auto 10px;
     
 }
-.third-heading{
+h3{
     width: 160px;
     text-align: center;
     font-weight: 600;
@@ -434,17 +410,10 @@ tr{
 .safari-window{
     margin-top: 60px;
 }
-/******6 block*******/
-.sixth-block{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/******Quote Block*******/
+.quote-block{
     justify-content: center;
     padding: 124px 0px 115px;
-    border-top: #969696 1px solid;
-    border-bottom: #969696 1px solid;
-    
- 
 }
 .content-nav{
     position: relative;
@@ -452,6 +421,10 @@ tr{
     max-width: 730px;
     display: flex;
     justify-content: center;
+}
+.content-nav p{
+    margin-top: 34px;
+    text-align: center;
 }
 .btn{
     position: absolute;
@@ -476,17 +449,17 @@ tr{
 }
 
 .btn-left{
-    left: -50px;
+    left: -100px;
     transform: translate(0,-50%);
 }
 .btn-right{
-    right: -50px;
+    right: -100px;
     transform: translate(0,-50%);
 }
 .google{
     margin-top: 40px;
 }
-.bold{
+.author{
     font-weight: 600;
     font-size: 20px;
     margin-top: 20px;
@@ -509,7 +482,7 @@ tr{
 }
 
 /**************7******/
-.seventh-section{
+.price-block{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -567,7 +540,7 @@ tr{
     border: 1px solid #DBDBDB;
     border-radius: 6px;
 }
-input.check{
+.details-content input .check{
     background-color: #24AFB5 !important;
     border: 1px solid #DBDBDB !important;
 }
@@ -640,6 +613,7 @@ footer{
     align-items: flex-start;
     justify-content:center;
     padding: 60px 0px 112px;
+    box-sizing: border-box;
     height: 220px;  
 }
 .footer p{
@@ -649,7 +623,7 @@ footer{
     margin: 0 auto;
     /* margin: 125px auto 77px; */
 }
-.navigation{
+.footer-links{
     display: flex;
     flex-direction: column;
     row-gap: 30px;
@@ -659,6 +633,10 @@ footer{
 footer .header-navigation{
     margin-top: 12px;
 }
+.social-img{
+    display: flex;
+    column-gap: 10px;
+}
 
 
 
@@ -667,8 +645,13 @@ footer .header-navigation{
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 40px 15px;
         border-bottom: #969696 1px solid;
     
+    }
+    section:nth-of-type(1){
+        overflow: hidden;
+        flex-direction: column-reverse;
     }
     .first-heading{
         font-size: 36px;
@@ -880,7 +863,7 @@ td{
     padding: 0px 15px;
 }
 .feautures{
-    padding: 0px 15px;
+
     flex-wrap: wrap;
 }
 .mobile-heading{
@@ -905,11 +888,11 @@ display: none;
 .sixth-block{
     padding: 54.43px 15px 57px;
 }
-.info-astronomy{
-    margin: 24.19px 0px 0px;
+.content-nav p{
+    margin: 24px 0px 0px;
 }
-.bold{
-    margin-top: 12.44px;
+.author{
+    margin-top: 12px;
 }
 .btn{
     display: none;
@@ -922,13 +905,13 @@ display: none;
     gap: 6px;
     margin-top: 48.8px;
 }
-.dot{
+.dots button{
     width: 8px;
     height: 8.06px;
     border-radius: 50%;
     background-color: #DBDBDB;
 }
-.dot-fill{
+.dots .dot-fill{
     background-color: #24AFB5;;
 }
 /*********7****/
@@ -941,4 +924,24 @@ display: none;
     width: 290px;
 }
 
-  }
+/*******FOOTER*/
+footer{
+    height: 350px;
+padding: 40px 15px 48px;
+}
+.footer-links{
+    margin: 30px 0px;
+    display: flex;
+    row-gap: 30px;
+    align-items: center;
+
+}
+.footer-links ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    width: 285px;
+}
+}
